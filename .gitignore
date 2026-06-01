@@ -12,7 +12,7 @@ venv/
 .idea/
 
 # Outputs
-outputs/
+outputs/*
 !outputs/.gitkeep
 
 # Model weights
