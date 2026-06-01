@@ -1,0 +1,38 @@
+paths:
+  images_dir: "data/images"
+  labels_dir: "data/labels"
+  cloud_dir: "data/cloud"
+  model_path: "models/mask_rcnn_dataset1_best.pth"
+  output_dir: "outputs"
+
+model:
+  num_classes: 2
+  confidence_threshold: 0.5
+  mask_threshold: 0.5
+
+priority:
+  weights:
+    confidence: 0.20
+    area: 0.15
+    center: 0.15
+    height: 0.25
+    valid_cloud: 0.15
+    overlap: 0.10
+
+grasp:
+  window_size: 21
+  candidate_stride: 4
+  max_candidates: 1800
+  min_valid_ratio: 0.55
+  min_edge_distance_px: 4
+  z_mode: "smaller_z_is_higher"
+  weights:
+    valid_cloud: 0.30
+    flatness: 0.25
+    edge_distance: 0.20
+    normal: 0.15
+    centrality: 0.10
+
+visualization:
+  crop_padding: 60
+  save_images: true

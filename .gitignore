@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+
+# PyCharm
+.idea/
+
+# Outputs
+outputs/
+
+# Model weights
+models/*.pth
+models/*.pt
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
