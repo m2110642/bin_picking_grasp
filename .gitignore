@@ -18,6 +18,7 @@ outputs/
 # Model weights
 models/*.pth
 models/*.pt
+!models/.gitkeep
 
 # System files
 .DS_Store
